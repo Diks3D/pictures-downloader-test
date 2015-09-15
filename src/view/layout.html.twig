@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Image loader{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link href="/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/vendor/jquery.ui.widget.js"></script>
+        <script src="/js/jquery.iframe-transport.js"></script>
+        <script src="/js/jquery.fileupload.js"></script>
+        <script src="/js/main.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </body>
+</html>

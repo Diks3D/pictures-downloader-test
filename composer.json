@@ -1,0 +1,10 @@
+{
+    "require": {
+        "php": ">=5.4.3",
+        "zendframework/zend-http": "dev-master",
+        "twig/twig": "1.*"
+    },
+    "config": {
+        "process-timeout": 600
+    }
+}
