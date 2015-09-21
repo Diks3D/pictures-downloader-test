@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: #ccc; }
+
+#wrapper {
+  max-width: 970px;
+  margin: 0 auto;
+  background-color: #FFF; }
+  #wrapper h1 {
+    font: 36px cursive;
+    color: #267ebd;
+    font-weight: 400;
+    text-align: center; }
+  #wrapper #upload_button {
+    position: relative;
+    margin: 20px auto 0;
+    height: 46px;
+    width: 156px;
+    border: 2px solid #267ebd;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #267ebd;
+    text-align: center;
+    line-height: 46px;
+    background-color: #FFF;
+    cursor: pointer; }
+    #wrapper #upload_button:hover, #wrapper #upload_button:focus {
+      background-color: #267ebd;
+      color: #FFF; }
+    #wrapper #upload_button #upload_input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      opacity: 0;
+      height: 48px;
+      width: 174px;
+      -ms-filter: 'alpha(opacity=0)';
+      font-size: 0px;
+      direction: ltr;
+      cursor: pointer; }
+  #wrapper #images_gallery {
+    min-height: 200px; }
+    #wrapper #images_gallery .images_row {
+      margin-top: 10px;
+      height: 200px;
+      width: 100%; }
+      #wrapper #images_gallery .images_row .imagebox {
+        float: left;
+        height: 200px;
+        min-width: 50px;
+        margin-right: 10px; }
+        #wrapper #images_gallery .images_row .imagebox:last-child {
+          margin-right: 0px; }
+        #wrapper #images_gallery .images_row .imagebox img {
+          display: block; }
+
+/*# sourceMappingURL=style.css.map */

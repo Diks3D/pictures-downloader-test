@@ -1,0 +1,79 @@
+@import "_reset";
+
+@import "_options.scss";
+
+body{
+    background-color: $grayColorShaded;
+}
+
+#wrapper{
+    max-width: 970px;
+    margin: 0 auto;
+    background-color: $bgWhite;
+    
+    h1{
+        font: 36px cursive;
+        color: $blueColorSelected;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #upload_button{
+        position: relative;
+        margin: 20px auto 0;
+        height: 46px;
+        width: 156px;
+        border: 2px solid $blueColorSelected;
+        border-radius: $borderRadius;
+        font-size: 20px;
+        font-weight: 700;
+        color: $blueColorSelected;
+        text-align: center;
+        line-height: 46px;
+        background-color: $bgWhite;
+        cursor: pointer;
+
+        &:hover,
+            &:focus{
+            background-color: $blueColorSelected;
+            color: $bgWhite;
+        }
+
+        #upload_input {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            opacity: 0;
+            height: 48px;
+            width: 174px;
+            -ms-filter: 'alpha(opacity=0)';
+            font-size: 0px;
+            direction: ltr;
+            cursor: pointer;
+        }
+    }   
+   
+    #images_gallery{
+        height: 200px;
+        min-width: 800px;
+            
+        .images_row{
+            margin-top: 10px;
+            height: 200px;
+            width: 100%; 
+            
+            .image_box{
+                float: left;
+                height: 200px;
+                margin-right: 10px;
+                overflow: hidden;
+                
+                &:last-child{margin-right: 0px;}
+                
+                img{display: block;}
+            }
+        }
+    }
+}
+
